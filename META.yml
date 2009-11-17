@@ -1,0 +1,12 @@
+--- #YAML:1.0
+name: CSS-Adaptor-Whitelist
+abstract: Filter potentially dangerous CSS
+version: 0.002
+author:
+    - Oldrich Kruza <sixtease@cpan.org>
+license: perl
+distribution_type: module
+requires:
+    CSS: 0
+build_requires:
+    Test::More: 0
