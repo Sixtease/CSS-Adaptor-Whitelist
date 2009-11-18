@@ -390,7 +390,7 @@ a true value, then it passes.
 =head2 Overriding defaults
 
 You are invited to modify the rules, particularly the ones that allow URL's.
-See L<set_url_re> for a convenient way.
+See C<set_url_re> for a convenient way.
 
 Also the C<font-family> (and thus also C<font>) properties are quite generous.
 Feel free to allow just a list of expected font families:
