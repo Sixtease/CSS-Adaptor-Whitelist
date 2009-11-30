@@ -8,5 +8,6 @@ license: perl
 distribution_type: module
 requires:
     CSS: 0
+    parent: 0
 build_requires:
     Test::More: 0

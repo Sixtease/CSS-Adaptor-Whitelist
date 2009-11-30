@@ -4,7 +4,7 @@ use strict;
 use CSS::Adaptor;
 use parent 'CSS::Adaptor';
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 sub log {
     my ($self, $msg) = @_;

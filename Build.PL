@@ -7,9 +7,12 @@ my $builder = Module::Build->new(
     license             => 'perl',
     dist_author         => 'Oldrich Kruza <sixtease@cpan.org>',
     dist_version_from   => 'lib/CSS/Adaptor/Whitelist.pm',
+    requires => {
+        CSS => 0,
+        parent => 0,
+    },
     build_requires => {
         'Test::More' => 0,
-        'CSS' => 0,
     },
     add_to_cleanup      => [ 'CSS-Adaptor-Whitelist-*' ],
     create_makefile_pl => 'traditional',
