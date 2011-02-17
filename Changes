@@ -1,5 +1,8 @@
 Revision history for CSS-Adaptor-Whitelist
 
+0.005   2011-02-17
+        xy_dim bugfix (X first, then Y).
+
 0.004   2009-12-31
         Background bugfix.
 

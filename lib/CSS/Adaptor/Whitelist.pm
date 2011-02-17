@@ -4,7 +4,7 @@ use strict;
 use CSS::Adaptor;
 use parent 'CSS::Adaptor';
 
-our $VERSION = '0.004';
+our $VERSION = '0.005';
 
 sub log {
     my ($self, $msg) = @_;
@@ -74,14 +74,10 @@ my $re_image = qr/(?:
     | $re_url
 )/x;
 my $re_xy_pos = qr/(?:
-    (?:
-        (?: top | center | bottom ) \b
-        (?: \s+
-            (?: left | center | right ) \b
-        )?
-    ) | (?:
-        $re_ndim (?: \s+ $re_ndim )?
-    )
+    (?: left | center | right | $re_ndim ) \b
+    (?: \s+
+        (?: top | center | bottom | $re_ndim ) \b
+    )?
 )/x;
 my $re_bg_attach = qr/(?:scroll\b|fixed\b)/;
 my $re_bg_repeat = qr/(?:repeat(?:-[xy])?\b|no-repeat\b)/;
