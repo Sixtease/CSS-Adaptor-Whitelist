@@ -15,7 +15,7 @@ my ($filtered, $parsed);
 # safe CSS
 $parsed = $css->parse_string( <<EOCSS );
 body {
-    background: #EEDDFF scroll;
+    background: #EEDDFF url(http://example.com/img.jpg) repeat scroll;
     padding: 5px 3px 0;
 }
 .highlighted {
@@ -27,7 +27,7 @@ ok(defined($parsed), 'Parsed safe CSS');
 $filtered = $css->output;
 is($filtered, <<EOCSS, 'Left safe CSS alone');
 body {
-    background: #EEDDFF scroll;
+    background: #EEDDFF url(http://example.com/img.jpg) repeat scroll;
     padding: 5px 3px 0;
 }
 .highlighted {

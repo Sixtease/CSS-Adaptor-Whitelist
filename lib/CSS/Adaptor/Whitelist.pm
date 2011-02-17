@@ -4,7 +4,7 @@ use strict;
 use CSS::Adaptor;
 use parent 'CSS::Adaptor';
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 sub log {
     my ($self, $msg) = @_;
@@ -57,7 +57,7 @@ my $re_color = qr/(?:
         (?: , (?:$re_zero_to_one | $re_percent) )?
       \)
 )/x;
-my $re_url = qr{url\((?:http://[-\w+.]+/[-/\w.?%#]+)};
+my $re_url = qr{url\((?:http://[-\w+.]+/[-/\w.?%#]+)\)};
 sub set_url_re {
     my ($new_re) = @_;
     if (ref($new_re) ne 'Regexp') {
@@ -84,7 +84,7 @@ my $re_xy_pos = qr/(?:
     )
 )/x;
 my $re_bg_attach = qr/(?:scroll\b|fixed\b)/;
-my $re_bg_repeat = qr/(?:repeat(?:-[xy])\b|no-repeat\b)/;
+my $re_bg_repeat = qr/(?:repeat(?:-[xy])?\b|no-repeat\b)/;
 
 # border
 my $re_border_width = qr/(?: thin\b | medium\b | thick\b | $re_dim )/x;

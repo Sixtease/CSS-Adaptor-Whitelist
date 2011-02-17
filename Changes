@@ -1,5 +1,8 @@
 Revision history for CSS-Adaptor-Whitelist
 
+0.004   2009-12-31
+        Background bugfix.
+
 0.003   2009-11-30
         Added parent dependency declaration.
 
