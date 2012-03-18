@@ -8,7 +8,7 @@ my $builder = Module::Build->new(
     dist_author         => 'Oldrich Kruza <sixtease@cpan.org>',
     dist_version_from   => 'lib/CSS/Adaptor/Whitelist.pm',
     requires => {
-        CSS => 0,
+        CSS => 1,
         parent => 0,
     },
     build_requires => {
